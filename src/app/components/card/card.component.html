@@ -1,0 +1,30 @@
+<div class="HTFA-card">
+    <div class="row">
+        <div id="image-container" class="col s3">
+            <img id="profile-image" src="{{student.pic}}" alt="{{student.firstName}} {{student.lastName}}">
+        </div>
+        <div class="col s7">
+            <h1><strong>{{student.firstName}} {{student.lastName}}</strong></h1>
+            <div id="student-info">
+                <p>Email: {{student.email}}</p>
+                <p>Company: {{student.company}}</p>
+                <p>Skill: {{student.skill}}</p>
+                <p>Average: {{averageTest}}%</p><br>
+
+                <div class="test-scores-container" [hidden]="showScores? true : false">
+                    <p *ngFor="let grade of student.grades; index as i">Test {{i+1}}: {{grade}}%</p>
+
+                    <a class="btn disabled" id="tags" *ngFor="let tag of student.tags">{{tag}}</a>
+
+                    <div class="input-field" id="add-tag">
+                        <input type="text" (keyup.enter)="addTag($event)">
+                        <label>Add a tag</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s2">
+            <i class="large material-icons" (click)="showScores = !showScores">{{showScores ? 'add': 'remove'}}</i>
+        </div>
+    </div>
+</div>

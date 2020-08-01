@@ -1,0 +1,35 @@
+.HTFA-card{
+    padding-top: 10px;;
+    border-bottom: groove;
+}
+
+#add-tag{
+    width: 65px;
+}
+
+#image-container{
+    padding-top: 10px;
+}
+#profile-image{
+    width: 90px;
+    border-radius: 50%;
+    border: .25px solid;
+}
+
+#student-info{
+    padding-left: 20px;
+}
+
+#tags{
+    margin: 5px;
+    margin-left: 0px;
+}
+
+h1{
+    font-size: 35px;
+}
+
+p{
+    margin:0;
+    padding: 0;
+}

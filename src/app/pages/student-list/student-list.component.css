@@ -1,0 +1,36 @@
+.student-list{
+    width: 600px;
+    margin: auto;
+    padding: 0px 5px;
+    border-radius: 5px;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* hidd scroll bar */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 10px 95px 19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 95px 19px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 95px 19px rgba(0,0,0,0.75);
+
+}
+
+.student-list::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+#search-bar{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+}
+

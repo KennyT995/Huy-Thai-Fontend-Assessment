@@ -1,0 +1,17 @@
+<div class="student-list">
+    <div id="search-bar">
+        <div class="input-field col s12">
+            <input type="text" [(ngModel)]="byName" (keyup)="filterByStudents($event)">
+            <label>Search by name</label>
+        </div>
+
+        <div class="input-field col s12">
+            <input type="text" [(ngModel)]="byTags" (keyup)="filterByStudents($event)">
+            <label>Search by tags</label>
+        </div>
+    </div>
+
+    <div id="card-container" *ngFor="let student of filteredStudents">
+        <HTFA-card [student]="student"></HTFA-card>
+    </div>
+</div>
